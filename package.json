@@ -2,6 +2,7 @@
   "name": "react-native-treeitems",
   "version": "1.0.0",
   "description": "A tree items component for react-native",
+
   "main": "src/index.js",
   "scripts": {
     "eslint-init": "eslint --init"
@@ -16,8 +17,12 @@
   },
   "license": "ISC",
   "peerDependencies": {
-    "react": "16.4.1",
-    "react-native": "0.56.0"
+    "react": "16.6.3",
+    "react-native": "0.58.4"
+  },
+  "repository": {
+    "type": "javascript",
+    "url": "https://github.com/Darksoulsong/react-native-treeitems"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
