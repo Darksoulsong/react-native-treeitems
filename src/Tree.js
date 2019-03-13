@@ -23,6 +23,7 @@ export default class TreeSlider extends Component<Props, State> {
     onPageChange: defaults.onPageChange,
     getRef: null,
     disabled: defaults.disabled,
+    timeoutToPageChange: defaults.timeoutToPageChange,
   };
 
   state = {
@@ -206,7 +207,7 @@ export default class TreeSlider extends Component<Props, State> {
 
   render() {
     const { tree, activePageIndex } = this.state;
-    const { renderBackButton, renderLoader, disabled } = this.props;
+    const { renderBackButton, renderLoader, disabled, timeoutToPageChange } = this.props;
     const activeItem = getActiveItem(tree, activePageIndex);
 
     return (
@@ -248,7 +249,7 @@ export default class TreeSlider extends Component<Props, State> {
                               this.onChange(item, index, pageIndex);
                               clearTimeout(timer);
                               timer = null;
-                            }, 500);
+                            }, timeoutToPageChange);
                           }}
                         >
                           {this.props.renderItem(item, index)}

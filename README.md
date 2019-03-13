@@ -139,6 +139,9 @@ export default function ({ data }) {
 - `disabled: boolean` **(defaults to false)**  
   Disables all the items from the tree.
 
+  - `timeoutToPageChange: boolean` **(defaults to 500)**  
+  Timer to the page change.
+
 - `getRef: (getBranch: () => void, goBack: () => void, goForward: () => void, getActivePageIndex: () => number, getTree: this.getTree ) => void`  
   Exposes some of the methods of the internal API through a react reference.
   - `getBranch()`: Returns the active branch and its nested active subitems.
