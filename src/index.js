@@ -1,3 +1,3 @@
-import Component from './TreeSlider';
+import Component from './Tree';
 
 export default Component;

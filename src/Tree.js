@@ -243,7 +243,13 @@ export default class TreeSlider extends Component<Props, State> {
                         <Touchable
                           disabled={disabled}
                           key={`item-${uid()}`}
-                          onPress={() => this.onChange(item, index, pageIndex)}
+                          onPress={() => {
+                            let timer = setTimeout(() => {
+                              this.onChange(item, index, pageIndex);
+                              clearTimeout(timer);
+                              timer = null;
+                            }, 500);
+                          }}
                         >
                           {this.props.renderItem(item, index)}
                         </Touchable>

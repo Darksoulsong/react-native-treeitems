@@ -148,7 +148,7 @@ export default function ({ data }) {
   - `getTree()`: Returns the parsed tree.
 
 - `renderLoader: () => ReactElement`  
-  If passed, renders a loader element for the last clicked tree item.
+  This is a function that renders a loader element for the last clicked tree item, in place, if provided.
 
 - `renderBackButton: () => ReactElement` **(required)**  
   Renders an element that will be used as your back button.
