@@ -1,6 +1,6 @@
 {
   "name": "react-native-treeitems",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0",
   "description": "A tree items component for react-native",
 
   "main": "src/index.js",
